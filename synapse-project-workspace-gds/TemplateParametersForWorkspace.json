@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapse-project-workspace-gds"
+		},
+		"SourceSQLDB_Conn_password": {
+			"value": ""
+		},
+		"SynapseServerless_password": {
+			"value": ""
+		},
+		"TargetADLS_accountKey": {
+			"value": ""
+		},
+		"synapse-project-workspace-gds-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapse-project-workspace-gds.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"SourceSQLDB_Conn_properties_typeProperties_server": {
+			"value": "migration-db-server-gds.database.windows.net"
+		},
+		"SourceSQLDB_Conn_properties_typeProperties_database": {
+			"value": "fintech-db-gds"
+		},
+		"SourceSQLDB_Conn_properties_typeProperties_userName": {
+			"value": "gdsadmin"
+		},
+		"SynapseServerless_properties_typeProperties_server": {
+			"value": "synapse-project-workspace-gds-ondemand.sql.azuresynapse.net,1433"
+		},
+		"SynapseServerless_properties_typeProperties_database": {
+			"value": "ReadExternalDataDB"
+		},
+		"SynapseServerless_properties_typeProperties_userName": {
+			"value": "sqladminuser"
+		},
+		"TargetADLS_properties_typeProperties_url": {
+			"value": "https://adfstoragewus3.dfs.core.windows.net/"
+		},
+		"synapse-project-workspace-gds-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://adfstoragewus3.dfs.core.windows.net"
+		}
+	}
+}
