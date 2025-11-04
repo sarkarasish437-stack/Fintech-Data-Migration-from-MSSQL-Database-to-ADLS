@@ -1,0 +1,13 @@
+{
+	"name": "New_SQLSourceTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceSQLDB_Conn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE DATABASE ReadExternalDataDB; \n\nCREATE EXTERNAL DATA SOURCE FintechDataExternal\nWITH (\n    LOCATION = 'https://adfstoragewus3.dfs.core.windows.net/fintech'\n);",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "ReadExternalDataDB",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
